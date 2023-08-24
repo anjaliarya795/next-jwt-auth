@@ -1,12 +1,16 @@
-import React from "react"
+"use client";
 
-export const LoginPage = () => {
+import React from "react";
+
+const LoginPage = () => {
+
     const [user, setUser] = React.useState({
         email: "",
         password: "",
     })
 
     return (
+
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <hr />
         
@@ -36,3 +40,5 @@ export const LoginPage = () => {
         )
 
 }
+
+export default LoginPage;
